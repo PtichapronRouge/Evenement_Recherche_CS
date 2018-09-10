@@ -127,7 +127,7 @@ Dans ce problème, on cherche un algorithme qui \textbf{compte toutes les \texti
 \section*{Complexité du problème}
 
 \begin{itemize}
-  \item Trouver la taille des \textit{mincuts} est un problème \textbf{P} : cela peut être fait en temps polynomial $\mathcal{O}(n m^2)$ où $n = |V|$ est le nombre de sommets du graphe et $m = |E|$ est le nombre de ses arêtes
+  \item Trouver la taille des \textit{mincuts} est un problème \textbf{P} : cela peut être fait en temps polynomial $\mathcal{O}(n m^2)$ où $n = |V|$ est le nombre de sommets du graphe et $m = |E|$ es le nombre de ses arêtes
   \item En revanche compter le nombre total de \textit{mincuts} est un problème \textbf{NP-HARD} : il n'existe pas d'algorithme polynomial pour le faire 
 \end{itemize}
 
@@ -191,7 +191,7 @@ Alors que la solution exacte d'un problème \textbf{P} peut être obtenue en tem
 
 \begin{itemize}
   \item On choisit de travailler sur les instances dont la taille $p$ de la \textit{mincut} est petite : des termes exponentiels en $p$ dans la complexité sont autorisés
-  \item  La \textbf{complexité FPT} s'écrit sous la forme $\mathcal{O}\left(Q(n)f(p)\right)$, où $Q$ est un polynôme et $f$ une fonction arbitraire. Pour paramètre $p\ll n$, le temps de calcul peut donc être raisonnable.\\
+  \item  La \textbf{complexité FPT} s'écrit sous la forme $O\left(Q(n)f(p)\right)$, où $Q$ est un polynôme et $f$ une fonction arbitraire. Pour paramètre $p\ll n$, le temps de calcul peut donc être raisonnable.\\
 \end{itemize}
 
 \newcommand{\bsize}{\large}
@@ -213,7 +213,7 @@ Alors que la solution exacte d'un problème \textbf{P} peut être obtenue en tem
 %    $p=100$ & $10^{20}$ ans & $10^{23}$ ans & $10^{26}$ ans\\
 %  \end{tabular} 
 
-  \captionof{table}{\captioncolor Quelques temps de calcul pour un algorithme FPT en $\mathcal{O}(2^p n^3)$, à $10^8$ flops}
+  \captionof{table}{\captioncolor Quelques temps de calcul pour un algorithme FPT en $O(2^p n^3)$, à $10^8$ flops}
 \end{center}
 
 %----------------------------------------------------------------------------------------
@@ -251,7 +251,7 @@ Alors que la solution exacte d'un problème \textbf{P} peut être obtenue en tem
 \end{enumerate}
 
 
-À titre indicatif, \textbf{on obtient une complexité en $2^{\mathcal{O}(p^2)}n^{\mathcal{O}(1)}$}; c'est-à-dire qu'à $p$ constant, la complexité est un polynôme de $n$ multiplié par une constante exponentielle en $p^2$.
+À titre indicatif, \textbf{on obtient une complexité en $2^{O(p^2)}n^{O(1)}$}; c'est-à-dire qu'à $p$ constant, la complexité est un polynôme de $n$ multiplié par une constante exponentielle en $p^2$.
 
 %----------------------------------------------------------------------------------------
 %	PERSPECTIVES
